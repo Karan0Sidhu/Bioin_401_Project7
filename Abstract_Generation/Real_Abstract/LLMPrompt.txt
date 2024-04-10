@@ -1,0 +1,17 @@
+<abstract>
+Extract semantic triples from the scientific abstract above. Strictly obey the following rules when extracting triples:
+1. Output each semantic triple in the format [subject, predicate, object].
+2. Only extract triples for which the subject is a biomarker.
+3. Only extract triples where there is a chemical or biological relationship between the subject and object.
+4. Ensure that each predicate is only 1-2 words long.
+5. Do not create any fictitious data that is not present in the abstract.
+6. Extract semantic triples from the scientific abstract above using the following steps:
+7. Find triples that include the location of a biomarker, use the predicate "biolocation is".
+8. Find triples that include how one is exposed to a biomarker, use the predicate "exposed through".
+9. Find triples that include foods a biomarker is found in, use the predicate "sourced through".
+10. Find triples that include the effects a biomarker causes, use the predicate "causes".
+11. Find triples that include the processes a biomarker is involved in, use the predicate "involved in".
+12. Find triples that include the role that a biomarker has, use the predicate "has role of" for this triple.
+13. Do not include any triples that have not been found using the previous steps. If no triples are found, it is ok.
+14. Do not generate any fictitious data or include any information that is not present in the abstract.
+15. Output each triple in the format [subject, predicate, object].
